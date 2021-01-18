@@ -1,7 +1,22 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
+import Head from 'next/head';
+import Layout from '../components/layout';
 
 const IndexPage: FC = () => {
-    return <h1 className="text-5xl text-red-500">Hello, CodeChem!</h1>;
+    return (
+        <Layout home={true}>
+            <Head>
+                <title>{'Napoleon Salazar'}</title>
+            </Head>
+            <section className="text-xl leading-7">
+                <p>[Your Self Introduction]</p>
+                <p>
+                    (This is a sample website - you’ll be building a site like this on{' '}
+                    <a href="https://nextjs.org/learn"> our Next.js tutorial</a>.)
+                </p>
+            </section>
+        </Layout>
+    );
 };
 
 export default IndexPage;

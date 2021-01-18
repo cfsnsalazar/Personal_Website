@@ -1,0 +1,18 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  a {
+    @apply text-blue-800
+  }
+  img {
+    @apply block
+  }
+  html {
+    @apply font-mono
+  }
+  body {
+    @apply font-mono
+  }
+}
