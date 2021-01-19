@@ -34,12 +34,12 @@ export default function Layout({ children, home }: LayoutType): ReactElement {
                             <a>
                                 <img
                                     src="/images/profile.jpg"
-                                    className="rounded-full w-30 h-30"
+                                    className="rounded-full w-20 h-20"
                                     alt={'Napoleon Salazar'}
                                 />
                             </a>
                         </Link>
-                        <h2 className="text-2xl leading-6 m-1">
+                        <h2 className="text-2xl leading-2 font-extrabold m-4 tracking-tighter">
                             <Link href="/">
                                 <a>Napoleon Salazar</a>
                             </Link>
@@ -49,7 +49,7 @@ export default function Layout({ children, home }: LayoutType): ReactElement {
             </header>
             <main>{children}</main>
             {!home && (
-                <div className="m-4">
+                <div className="mt-4">
                     <Link href="/">
                         <a>← Back to home</a>
                     </Link>
