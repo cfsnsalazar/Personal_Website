@@ -26,7 +26,7 @@ export default function Layout({ children, home }: LayoutType): ReactElement {
                 {home ? (
                     <>
                         <img src="/images/profile.jpg" className="rounded-full w-40 h-40" alt={'Napoleon Salazar'} />
-                        <h1 className=" text-2xl lg:text-5xl leading-12 font-extrabold mt-4 sm:m-8 tracking-tighter">{`Napoleon Salazar`}</h1>
+                        <h1 className=" text-2xl md:text-5xl leading-12 font-extrabold mt-4 md:m-8 tracking-tighter">{`Napoleon Salazar`}</h1>
                     </>
                 ) : (
                     <>
