@@ -3,6 +3,7 @@ import Layout from '../../components/layout';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
 import Date from '../../components/date';
+import { GetStaticPaths, GetStaticProps } from 'next';
 
 interface PostData {
     id: string;
@@ -28,19 +29,19 @@ export default function Post({ postData }: { postData: PostData }): ReactElement
     );
 }
 
-export async function getStaticProps({ params }) {
+export const getStaticProps: GetStaticProps = async ({ params }) => {
     const postData = await getPostData(params.id);
     return {
         props: {
             postData,
         },
     };
-}
+};
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
     const paths = getAllPostIds();
     return {
         paths,
         fallback: false,
     };
-}
+};

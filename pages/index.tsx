@@ -5,6 +5,8 @@ import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
 
+import { GetStaticProps } from 'next';
+
 interface PostData {
     id: string;
     title: string;
@@ -45,13 +47,13 @@ export function Home({ allPostsData }: { allPostsData: [PostData] }): ReactEleme
     );
 }
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
     const allPostsData = getSortedPostsData();
     return {
         props: {
             allPostsData,
         },
     };
-}
+};
 
 export default Home;
