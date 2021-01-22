@@ -9,7 +9,7 @@ interface LayoutType {
 
 export default function Layout({ children, home }: LayoutType): ReactElement {
     return (
-        <div className="container mx-auto p-8 max-w-2xl">
+        <div className="container mx-auto p-8 max-w-4xl">
             <Head>
                 <link rel="icon" href="/public/images/toon_face.jpg" />
                 <meta name="description" content="Napo's blog built with Next.js" />
