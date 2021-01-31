@@ -1,15 +1,16 @@
 import React, { ReactElement } from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
+import { NavMenu, NavPage } from './navMenu';
+import { Footer } from './footer';
 
 interface LayoutType {
     children: React.ReactNode;
-    home: boolean;
+    page: NavPage;
 }
 
-export default function Layout({ children, home }: LayoutType): ReactElement {
+export default function Layout({ children, page }: LayoutType): ReactElement {
     return (
-        <div className="container mx-auto p-8 max-w-4xl">
+        <div>
             <Head>
                 <link rel="icon" href="/public/images/toon_face.jpg" />
                 <meta name="description" content="Napo's blog built with Next.js" />
@@ -23,38 +24,14 @@ export default function Layout({ children, home }: LayoutType): ReactElement {
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
             <header className="flex flex-col items-center">
-                {home ? (
-                    <>
-                        <img src="/images/profile.jpg" className="rounded-full w-40 h-40" alt={'Napoleon Salazar'} />
-                        <h1 className=" text-2xl md:text-5xl leading-12 font-extrabold mt-4 md:m-8 tracking-tighter">{`Napoleon Salazar`}</h1>
-                    </>
-                ) : (
-                    <>
-                        <Link href="/">
-                            <a>
-                                <img
-                                    src="/images/profile.jpg"
-                                    className="rounded-full w-20 h-20"
-                                    alt={'Napoleon Salazar'}
-                                />
-                            </a>
-                        </Link>
-                        <h2 className="text-2xl leading-2 font-extrabold m-4 tracking-tighter">
-                            <Link href="/">
-                                <a>Napoleon Salazar</a>
-                            </Link>
-                        </h2>
-                    </>
-                )}
+                <NavMenu page={page} />
             </header>
-            <main>{children}</main>
-            {!home && (
-                <div className="mt-4">
-                    <Link href="/">
-                        <a>← Back to home</a>
-                    </Link>
-                </div>
-            )}
+            <div className="container mx-auto max-w-4xl">
+                <main>{children}</main>
+            </div>
+            <footer>
+                <Footer />
+            </footer>
         </div>
     );
 }

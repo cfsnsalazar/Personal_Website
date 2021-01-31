@@ -4,6 +4,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
 import Date from '../../components/date';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import { NavPage } from '../../components/navMenu';
 
 interface PostData {
     id: string;
@@ -14,11 +15,11 @@ interface PostData {
 
 export default function Post({ postData }: { postData: PostData }): ReactElement {
     return (
-        <Layout home={false}>
+        <Layout page={NavPage.BLOG}>
             <Head>
                 <title>{postData.title}</title>
             </Head>
-            <article>
+            <article className="m-6">
                 <h1 className="text-4xl leading-10 font-extrabold tracking-tighter">{postData.title}</h1>
                 <div className="text-sm text-gray-500 mb-4">
                     <Date dateString={postData.date} />
