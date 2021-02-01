@@ -12,16 +12,17 @@ export function Footer(): ReactElement {
                                 <h1 className="text-black">NAPO</h1>
                             </a>
                         </Link>
-                        <div className="grid grid-cols-4 text-center my-8 items-center">
+                        <div className="grid grid-cols-3 text-center my-8 items-center">
                             <Link href="/about">
                                 <a className="col-span-1 items-center py-4">/about</a>
                             </Link>
                             <Link href="/blog">
                                 <a className="col-span-1 items-center py-4">/blog</a>
                             </Link>
+                            {/* TODO: Enable once a project is available 
                             <Link href="/portfolio">
                                 <a className="col-span-1 items-center py-4">/portfolio</a>
-                            </Link>
+                            </Link> */}
                             <Link href="/uses">
                                 <a className="col-span-1 items-center py-4">/uses</a>
                             </Link>

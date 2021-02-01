@@ -83,6 +83,7 @@ export function NavMenu({ page }: { page: NavPage }): ReactElement {
                                             Blog
                                         </a>
                                     </Link>
+                                    {/* TODO: Enable once a project is available 
                                     <Link href="/portfolio">
                                         <a
                                             className={clsx(
@@ -93,7 +94,7 @@ export function NavMenu({ page }: { page: NavPage }): ReactElement {
                                         >
                                             Portfolio
                                         </a>
-                                    </Link>
+                                    </Link> */}
                                     <Link href="/uses">
                                         <a
                                             href="#"
