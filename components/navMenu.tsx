@@ -52,10 +52,10 @@ export function NavMenu({ page }: { page: NavPage }): ReactElement {
                         </div>
 
                         <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
-                            <div className="flex-shrink-0 flex items-center">
+                            <div className=" flex items-center">
                                 <Link href="/">
                                     <a>
-                                        <h1 className="text-black">NAPO</h1>
+                                        <img src="../images/logo.png" className="w-48" />
                                     </a>
                                 </Link>
                             </div>
@@ -65,8 +65,8 @@ export function NavMenu({ page }: { page: NavPage }): ReactElement {
                                         <a
                                             className={clsx(
                                                 page === NavPage.ABOUT
-                                                    ? 'bg-gray-400 text-black px-3 py-2 rounded-md text-sm font-medium'
-                                                    : 'text-black hover:bg-gray-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium',
+                                                    ? 'flex bg-blue-300 text-black px-3 py-2 rounded-md text-sm font-medium items-center'
+                                                    : 'flex text-black hover:bg-blue-100 hover:text-black px-3 py-2 rounded-md text-sm font-medium items-center',
                                             )}
                                         >
                                             About Me
@@ -76,8 +76,8 @@ export function NavMenu({ page }: { page: NavPage }): ReactElement {
                                         <a
                                             className={clsx(
                                                 page === NavPage.BLOG
-                                                    ? 'bg-gray-400 text-black px-3 py-2 rounded-md text-sm font-medium'
-                                                    : 'text-black hover:bg-gray-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium',
+                                                ? 'flex bg-blue-300 text-black px-3 py-2 rounded-md text-sm font-medium items-center'
+                                                : 'flex text-black hover:bg-blue-100 hover:text-black px-3 py-2 rounded-md text-sm font-medium items-center',
                                             )}
                                         >
                                             Blog
@@ -100,8 +100,8 @@ export function NavMenu({ page }: { page: NavPage }): ReactElement {
                                             href="#"
                                             className={clsx(
                                                 page === NavPage.USES
-                                                    ? 'bg-gray-400 text-black px-3 py-2 rounded-md text-sm font-medium'
-                                                    : 'text-black hover:bg-gray-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium',
+                                                ? 'flex bg-blue-300 text-black px-3 py-2 rounded-md text-sm font-medium items-center'
+                                                : 'flex text-black hover:bg-blue-100 hover:text-black px-3 py-2 rounded-md text-sm font-medium items-center',
                                             )}
                                         >
                                             Uses

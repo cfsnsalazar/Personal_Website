@@ -10,8 +10,8 @@ export function Sidebar({ page }: { page: NavPage }): ReactElement {
                     <a
                         className={clsx(
                             page === NavPage.HOME
-                                ? 'bg-gray-400 text-black px-3 py-2 rounded-md text-sm font-medium'
-                                : 'text-black hover:bg-gray-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium',
+                                ? 'bg-blue-300 text-black px-3 py-2 rounded-md text-sm font-medium'
+                                : 'text-black hover:bg-blue-100 hover:text-black px-3 py-2 rounded-md text-sm font-medium',
                         )}
                     >
                         Home
@@ -21,8 +21,8 @@ export function Sidebar({ page }: { page: NavPage }): ReactElement {
                     <a
                         className={clsx(
                             page === NavPage.ABOUT
-                                ? 'bg-gray-400 text-black px-3 py-2 rounded-md text-sm font-medium'
-                                : 'text-black hover:bg-gray-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium',
+                                ? 'bg-blue-300 text-black px-3 py-2 rounded-md text-sm font-medium'
+                                : 'text-black hover:bg-blue-100 hover:text-black px-3 py-2 rounded-md text-sm font-medium',
                         )}
                     >
                         About Me
@@ -32,8 +32,8 @@ export function Sidebar({ page }: { page: NavPage }): ReactElement {
                     <a
                         className={clsx(
                             page === NavPage.BLOG
-                                ? 'bg-gray-400 text-black px-3 py-2 rounded-md text-sm font-medium'
-                                : 'text-black hover:bg-gray-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium',
+                                ? 'bg-blue-300 text-black px-3 py-2 rounded-md text-sm font-medium'
+                                : 'text-black hover:bg-blue-100 hover:text-black px-3 py-2 rounded-md text-sm font-medium',
                         )}
                     >
                         Blog
@@ -55,8 +55,8 @@ export function Sidebar({ page }: { page: NavPage }): ReactElement {
                     <a
                         className={clsx(
                             page === NavPage.USES
-                                ? 'bg-gray-400 text-black px-3 py-2 rounded-md text-sm font-medium'
-                                : 'text-black hover:bg-gray-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium',
+                                ? 'bg-blue-300 text-black px-3 py-2 rounded-md text-sm font-medium'
+                                : 'text-black hover:bg-blue-100 hover:text-black px-3 py-2 rounded-md text-sm font-medium',
                         )}
                     >
                         Uses

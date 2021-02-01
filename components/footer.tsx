@@ -9,7 +9,7 @@ export function Footer(): ReactElement {
                     <div className="mb-4 flex flex-col sm:flex-row flex-wrap justify-between items-center w-full">
                         <Link href="/">
                             <a className="items-center">
-                                <h1 className="text-black">NAPO</h1>
+                                <img src="../images/logo.png" className="w-44" />
                             </a>
                         </Link>
                         <div className="grid grid-cols-3 text-center my-8 items-center">
