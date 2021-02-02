@@ -10,7 +10,7 @@ export function Sidebar({ page }: { page: NavPage }): ReactElement {
                     <a
                         className={clsx(
                             page === NavPage.HOME
-                                ? 'bg-blue-300 text-black px-3 py-2 rounded-md text-sm font-medium'
+                                ? 'bg-blue-800 text-white px-3 py-2 rounded-md text-sm font-medium'
                                 : 'text-black hover:bg-blue-100 hover:text-black px-3 py-2 rounded-md text-sm font-medium',
                         )}
                     >
@@ -21,7 +21,7 @@ export function Sidebar({ page }: { page: NavPage }): ReactElement {
                     <a
                         className={clsx(
                             page === NavPage.ABOUT
-                                ? 'bg-blue-300 text-black px-3 py-2 rounded-md text-sm font-medium'
+                                ? 'bg-blue-800 text-white px-3 py-2 rounded-md text-sm font-medium'
                                 : 'text-black hover:bg-blue-100 hover:text-black px-3 py-2 rounded-md text-sm font-medium',
                         )}
                     >
@@ -32,7 +32,7 @@ export function Sidebar({ page }: { page: NavPage }): ReactElement {
                     <a
                         className={clsx(
                             page === NavPage.BLOG
-                                ? 'bg-blue-300 text-black px-3 py-2 rounded-md text-sm font-medium'
+                                ? 'bg-blue-800 text-white px-3 py-2 rounded-md text-sm font-medium'
                                 : 'text-black hover:bg-blue-100 hover:text-black px-3 py-2 rounded-md text-sm font-medium',
                         )}
                     >
@@ -55,7 +55,7 @@ export function Sidebar({ page }: { page: NavPage }): ReactElement {
                     <a
                         className={clsx(
                             page === NavPage.USES
-                                ? 'bg-blue-300 text-black px-3 py-2 rounded-md text-sm font-medium'
+                                ? 'bg-blue-800 text-white px-3 py-2 rounded-md text-sm font-medium'
                                 : 'text-black hover:bg-blue-100 hover:text-black px-3 py-2 rounded-md text-sm font-medium',
                         )}
                     >

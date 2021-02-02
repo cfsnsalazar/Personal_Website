@@ -13,7 +13,7 @@ export function NavMenu({ page }: { page: NavPage }): ReactElement {
                     <div className="relative flex items-center justify-between h-16">
                         <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                             <button
-                                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                                 aria-expanded="false"
                                 onClick={() => setIsOpen(true)}
                             >
@@ -65,7 +65,7 @@ export function NavMenu({ page }: { page: NavPage }): ReactElement {
                                         <a
                                             className={clsx(
                                                 page === NavPage.ABOUT
-                                                    ? 'flex bg-blue-300 text-black px-3 py-2 rounded-md text-sm font-medium items-center'
+                                                    ? 'flex bg-blue-800 text-white px-3 py-2 rounded-md text-sm font-medium items-center'
                                                     : 'flex text-black hover:bg-blue-100 hover:text-black px-3 py-2 rounded-md text-sm font-medium items-center',
                                             )}
                                         >
@@ -76,8 +76,8 @@ export function NavMenu({ page }: { page: NavPage }): ReactElement {
                                         <a
                                             className={clsx(
                                                 page === NavPage.BLOG
-                                                ? 'flex bg-blue-300 text-black px-3 py-2 rounded-md text-sm font-medium items-center'
-                                                : 'flex text-black hover:bg-blue-100 hover:text-black px-3 py-2 rounded-md text-sm font-medium items-center',
+                                                    ? 'flex bg-blue-800 text-white px-3 py-2 rounded-md text-sm font-medium items-center'
+                                                    : 'flex text-black hover:bg-blue-100 hover:text-black px-3 py-2 rounded-md text-sm font-medium items-center',
                                             )}
                                         >
                                             Blog
@@ -88,7 +88,7 @@ export function NavMenu({ page }: { page: NavPage }): ReactElement {
                                         <a
                                             className={clsx(
                                                 page === NavPage.PORTFOLIO
-                                                    ? 'bg-gray-400 text-black px-3 py-2 rounded-md text-sm font-medium'
+                                                    ? 'flex bg-blue-800 text-white px-3 py-2 rounded-md text-sm font-medium items-center'
                                                     : 'text-black hover:bg-gray-300 hover:text-black px-3 py-2 rounded-md text-sm font-medium',
                                             )}
                                         >
@@ -100,8 +100,8 @@ export function NavMenu({ page }: { page: NavPage }): ReactElement {
                                             href="#"
                                             className={clsx(
                                                 page === NavPage.USES
-                                                ? 'flex bg-blue-300 text-black px-3 py-2 rounded-md text-sm font-medium items-center'
-                                                : 'flex text-black hover:bg-blue-100 hover:text-black px-3 py-2 rounded-md text-sm font-medium items-center',
+                                                    ? 'flex bg-blue-800 text-white px-3 py-2 rounded-md text-sm font-medium items-center'
+                                                    : 'flex text-black hover:bg-blue-100 hover:text-black px-3 py-2 rounded-md text-sm font-medium items-center',
                                             )}
                                         >
                                             Uses
