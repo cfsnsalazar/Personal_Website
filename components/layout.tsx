@@ -12,7 +12,7 @@ export default function Layout({ children, page }: LayoutType): ReactElement {
     return (
         <div>
             <Head>
-                <link rel="icon" href="/public/images/toon_face.jpg" />
+                <link rel="icon" href="../images/toon_face.jpg" />
                 <meta name="description" content="Napo's blog built with Next.js" />
                 <meta
                     property="og:image"
