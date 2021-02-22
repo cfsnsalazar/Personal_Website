@@ -7,30 +7,29 @@ export function Footer(): ReactElement {
             <div className="container mx-auto max-w-4xl">
                 <div className="prose w-full max-w-screen-lg mx-auto px-4 lg:px-8 py-10 flex flex-col items-center">
                     <div className="mb-4 flex flex-col sm:flex-row flex-wrap justify-between items-center w-full">
-                        <Link href="/">
-                            <a className="items-center">
-                                <img src="../images/logo.png" className="w-44" />
-                            </a>
-                        </Link>
-                        <div className="grid grid-cols-3 text-center my-8 items-center">
-                            <Link href="/about">
+                        {/* <Link href="/"> */}
+                        <div className="flex flex-col items-center">
+                            <img src="../images/logo.png" className="w-40" />
+
+                            <small className="w-84">All content &copy; Napoleon Salazar</small>
+                        </div>
+                        {/* </Link> */}
+                        {/* <div className="grid grid-cols-3 text-center my-8 items-center"> */}
+                        {/* <Link href="/about">
                                 <a className="col-span-1 items-center py-4">/about</a>
                             </Link>
                             <Link href="/blog">
                                 <a className="col-span-1 items-center py-4">/blog</a>
-                            </Link>
-                            {/* TODO: Enable once a project is available 
+                            </Link> */}
+                        {/* TODO: Enable once a project is available 
                             <Link href="/portfolio">
                                 <a className="col-span-1 items-center py-4">/portfolio</a>
                             </Link> */}
-                            <Link href="/uses">
+                        {/* <Link href="/uses">
                                 <a className="col-span-1 items-center py-4">/uses</a>
-                            </Link>
-                            <div className="text-center col-span-4">
-                                <small>All content &copy; Napoleon Salazar</small>
-                            </div>
-                        </div>
-                        <div className="grid grid-cols-3 gap-4">
+                            </Link> */}
+                        {/* </div> */}
+                        <div className="grid grid-cols-3 gap-4 mt-8">
                             <a href="https://github.com/cfsnsalazar" aria-label="Visit my GitHub">
                                 <svg
                                     viewBox="0 0 512 512"
