@@ -27,7 +27,7 @@ export function Home(): ReactElement {
             <section className="text-xl leading-7 mt-12 mb-12 mr-6 ml-6">
                 <h1 className="text-3xl leading-12 text-left tracking-tighter font-bold">Skills</h1>
                 <div className="sm:flex mb-16">
-                    <p className="mx-auto text-lg text-gray-600 text-justify mt-6 ml-2 mr-2">
+                    <p className="mx-auto text-lg text-gray-600 mt-6 ml-2 mr-2">
                         {`Although I consider myself to be "T-Shaped", I have a special inclination for Mobile Development. Kotlin is without a doubt the language I enjoy the most nowadays `}
                     </p>
                     <div className="flex flex-col">
@@ -141,7 +141,7 @@ export function Home(): ReactElement {
             <section className="text-xl leading-7 mt-12 mb-16 mr-6 ml-6">
                 <h1 className="text-3xl leading-12 text-left tracking-tighter font-bold">Open Source Contributions </h1>
 
-                <p className=" mx-auto text-lg text-gray-600 text-justify mt-6 ml-2 mr-2">
+                <p className=" mx-auto text-lg text-gray-600 mt-6 ml-2 mr-2">
                     {`Without open source, several technologies that we take for granted today would not exist. 
                     These are some of the repositories that I have contributed to : `}
                 </p>
