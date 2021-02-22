@@ -9,8 +9,8 @@ export function Home(): ReactElement {
             <Head>
                 <title>{'Napoleon Salazar'}</title>
             </Head>
-            <section className="text-xl leading-7 mt-12 mb-12 mr-6 ml-6">
-                <div className="flex md:flex-row flex-col items-center md:mt-16 mb-16">
+            <section className="text-xl leading-7 mr-6 ml-6">
+                <div className="flex md:flex-row flex-col items-center mb-16">
                     <div className="flex flex-auto md:flex-none justify-center ">
                         <img src="../images/profile.jpg" className="rounded-full m-4 w-48 sm:w-56 h-48 sm:h-56" />
                     </div>
@@ -26,7 +26,7 @@ export function Home(): ReactElement {
             </section>
             <section className="text-xl leading-7 mt-12 mb-12 mr-6 ml-6">
                 <h1 className="text-3xl leading-12 text-left tracking-tighter font-bold">Skills</h1>
-                <div className="sm:flex">
+                <div className="sm:flex mb-16">
                     <p className="mx-auto text-lg text-gray-600 text-justify mt-6 ml-2 mr-2">
                         {`Although I consider myself to be "T-Shaped", I have a special inclination for Mobile Development. Kotlin is without a doubt the language I enjoy the most nowadays `}
                     </p>
@@ -138,7 +138,7 @@ export function Home(): ReactElement {
                 </div>
             </section>
 
-            <section className="text-xl leading-7 mt-12 mb-12 mr-6 ml-6">
+            <section className="text-xl leading-7 mt-12 mb-16 mr-6 ml-6">
                 <h1 className="text-3xl leading-12 text-left tracking-tighter font-bold">Open Source Contributions </h1>
 
                 <p className=" mx-auto text-lg text-gray-600 text-justify mt-6 ml-2 mr-2">

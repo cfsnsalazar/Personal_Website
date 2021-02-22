@@ -6,7 +6,7 @@ export function Sidebar({ page }: { page: NavPage }): ReactElement {
     return (
         <aside className="bg-white sm:bg-gray-200 flex flex-col h-screen sm:h-full items-center justify-between w-full">
             <div className="flex flex-col w-full p-4 space-y-2">
-                <Link href="/">
+                {/* <Link href="/">
                     <a
                         className={clsx(
                             page === NavPage.HOME
@@ -38,7 +38,7 @@ export function Sidebar({ page }: { page: NavPage }): ReactElement {
                     >
                         Blog
                     </a>
-                </Link>
+                </Link> */}
                 {/* TODO: Enable once a project is available
                 <Link href="/portfolio">
                     <a
@@ -51,7 +51,7 @@ export function Sidebar({ page }: { page: NavPage }): ReactElement {
                         Portfolio
                     </a>
                 </Link> */}
-                <Link href="/uses">
+                {/* <Link href="/uses">
                     <a
                         className={clsx(
                             page === NavPage.USES
@@ -61,7 +61,7 @@ export function Sidebar({ page }: { page: NavPage }): ReactElement {
                     >
                         Uses
                     </a>
-                </Link>
+                </Link> */}
             </div>
         </aside>
     );

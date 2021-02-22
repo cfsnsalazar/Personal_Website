@@ -10,8 +10,8 @@ export function NavMenu({ page }: { page: NavPage }): ReactElement {
         <>
             <nav className="container mx-auto max-w-4xl">
                 <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-                    <div className="relative flex items-center justify-between h-16">
-                        <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <div className="relative flex items-center justify-between h-32">
+                        {/* <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                             <button
                                 className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                                 aria-expanded="false"
@@ -49,7 +49,7 @@ export function NavMenu({ page }: { page: NavPage }): ReactElement {
                                     />
                                 </svg>
                             </button>
-                        </div>
+                        </div> */}
 
                         <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between">
                             <div className=" flex items-center">
@@ -61,7 +61,7 @@ export function NavMenu({ page }: { page: NavPage }): ReactElement {
                             </div>
                             <div className="hidden sm:flex sm:w-full sm:ml-6 sm:justify-end">
                                 <div className="flex space-x-4 ">
-                                    <Link href="/about">
+                                    {/* <Link href="/about">
                                         <a
                                             className={clsx(
                                                 page === NavPage.ABOUT
@@ -71,8 +71,8 @@ export function NavMenu({ page }: { page: NavPage }): ReactElement {
                                         >
                                             About Me
                                         </a>
-                                    </Link>
-                                    <Link href="/blog">
+                                    </Link> */}
+                                    {/* <Link href="/blog">
                                         <a
                                             className={clsx(
                                                 page === NavPage.BLOG
@@ -82,7 +82,7 @@ export function NavMenu({ page }: { page: NavPage }): ReactElement {
                                         >
                                             Blog
                                         </a>
-                                    </Link>
+                                    </Link> */}
                                     {/* TODO: Enable once a project is available 
                                     <Link href="/portfolio">
                                         <a
@@ -95,7 +95,7 @@ export function NavMenu({ page }: { page: NavPage }): ReactElement {
                                             Portfolio
                                         </a>
                                     </Link> */}
-                                    <Link href="/uses">
+                                    {/* <Link href="/uses">
                                         <a
                                             href="#"
                                             className={clsx(
@@ -106,7 +106,7 @@ export function NavMenu({ page }: { page: NavPage }): ReactElement {
                                         >
                                             Uses
                                         </a>
-                                    </Link>
+                                    </Link> */}
                                 </div>
                             </div>
                         </div>
